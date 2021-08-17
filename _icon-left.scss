@@ -1,0 +1,41 @@
+.icon-left {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.icon-left__icon-wrap {
+  display: flex;
+  width: 65px;
+  height: 65px;
+  margin-right: 1em;
+
+  align-items: center;
+  flex-grow: 0;     /* флекс элемент НЕ увеличивается */
+  flex-shrink: 0;   /* флекс элемент НЕ сжимается*/
+  flex-basis: 65px; /* средний размер для флекс элемента */
+  justify-content: center;
+
+  // border-radius: 100%;
+  // background: $color__primary;
+  // box-shadow: 0px 0px 8px #e6e6e6;
+  i {
+    font-size: 2em;
+    color: #fff;
+  }
+}
+.icon-left__icon {
+  max-width: 100%;
+}
+
+.icon-left__title { font-size: 1.2em; text-align: left; font-weight: bold; }
+
+.icon-left__content {
+  margin-top: 0.5em;
+}
+.icon-left__content p {
+  margin: 0;
+}
+
+@media( min-width: 1200px ) {
+  .icon-left__title { font-size: 1.5em; }
+}
